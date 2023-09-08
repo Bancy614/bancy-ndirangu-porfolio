@@ -1,11 +1,14 @@
 :root {
-  --primary-color-background: #f9f7fe;
+  --primary-color-background: #edaa73;
+  /* --primary-color-background: #f9f7fe; */
   --secondary-color-btn: #6c63ff;
   --font-family-heading: "Playfair Display", serif;
   --font-family-default: "Poppins", sans-serif;
+  --box-shadow: 5px 8px 16px rgba(0, 0, 000.2);
 }
 body {
   font-family: var(--font-family-default);
+  background-color: #edaa73;
 }
 h1,
 h2,
@@ -21,6 +24,7 @@ h6 {
 .hero {
   background: var(--primary-color-background);
   padding: 60px 20px;
+  box-shadow: var(--box-shadow);
 }
 h1 {
   font-weight: 700;
@@ -69,36 +73,11 @@ h2 {
   line-height: 27px;
 }
 .project-description {
-  background: white;
   padding: 120px 60px;
+  box-shadow: var(--box-shadow);
 }
-@media (max-width: 900px) {
-  .project-description,
-  .about-section {
-    padding: 0;
-    text-align: center;
-  }
-  h1 {
-    font-size: 38px;
-    line-height: 1.5;
-  }
-  h2 {
-    font-size: 44px;
-  }
-  .content-container h1 {
-    text-align: center;
-    margin-top: 30px;
-  }
-  .hero h2 {
-    font-size: 22px;
-    font-weight: bold;
-  }
-  .hero {
-    padding: 80px 20px;
-  }
-  h2 {
-    font-size: 44px;
-  }
+img {
+  box-shadow: var(--box-shadow);
 }
 
 .content-container {
@@ -180,4 +159,32 @@ footer .contact-box p {
 .nav-links li.active {
   background: var(--primary-color-background);
   margin-top: -8px;
+}
+@media (max-width: 900px) {
+  .project-description,
+  .about-section {
+    padding: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 38px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .content-container h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .hero h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  h2 {
+    font-size: 44px;
+  }
 }
